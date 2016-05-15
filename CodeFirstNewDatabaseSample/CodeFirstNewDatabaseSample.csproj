@@ -56,13 +56,45 @@
   <ItemGroup>
     <Compile Include="Blog.cs" />
     <Compile Include="BloggingContext.cs" />
+    <Compile Include="Migrations\201605151126573_InitialCreate.cs" />
+    <Compile Include="Migrations\201605151126573_InitialCreate.Designer.cs">
+      <DependentUpon>201605151126573_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201605151150079_AddUrlToBlog.cs" />
+    <Compile Include="Migrations\201605151150079_AddUrlToBlog.Designer.cs">
+      <DependentUpon>201605151150079_AddUrlToBlog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201605151203060_AddUsersTable.cs" />
+    <Compile Include="Migrations\201605151203060_AddUsersTable.Designer.cs">
+      <DependentUpon>201605151203060_AddUsersTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201605151937145_DataAnnotations.cs" />
+    <Compile Include="Migrations\201605151937145_DataAnnotations.Designer.cs">
+      <DependentUpon>201605151937145_DataAnnotations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Post.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201605151126573_InitialCreate.resx">
+      <DependentUpon>201605151126573_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605151150079_AddUrlToBlog.resx">
+      <DependentUpon>201605151150079_AddUrlToBlog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605151203060_AddUsersTable.resx">
+      <DependentUpon>201605151203060_AddUsersTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605151937145_DataAnnotations.resx">
+      <DependentUpon>201605151937145_DataAnnotations.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
