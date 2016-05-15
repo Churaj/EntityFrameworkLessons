@@ -55,13 +55,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Blog.cs" />
-    <Compile Include="BloggingContext.cs" />
     <Compile Include="Post.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="CodeTemplates\EFModelFromDatabase\Context.cs.t4" />
+    <None Include="CodeTemplates\EFModelFromDatabase\EntityType.cs.t4" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
